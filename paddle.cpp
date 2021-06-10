@@ -21,7 +21,7 @@ void Paddle::mouseMoveEvent(QGraphicsSceneMouseEvent *event){
     // курсора внутри элемента
     // в координатную систему сцены
     // координату Y делаем константой
-    this->setPos(mapToScene(event->pos()).x(),560);
+    setPos(mapToScene(event->pos()).x(),560);
 
     // Ограничиваем передвижение ракетки в пределах окна
     double screen_width = game->width();
